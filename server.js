@@ -90,5 +90,7 @@ app.post('/api/login', function (req, res) {
     }
 })
 
+app.get('/', (res, req) => res.send('Hello world with express'))
+
 const port = process.env.PORT || 3330
 app.listen(port, () => console.log(`IG API server started listening on ${port}...`))
